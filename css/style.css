@@ -1,0 +1,192 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    padding: 1rem;
+}
+
+nav ul{
+    padding: 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0.7rem;
+}
+
+nav ul li{
+    padding: 0.5rem;
+    color: black;
+    background-color: blanchedalmond;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+h1{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.mainHome{
+    height: 70vh;
+    display: grid;
+    padding: 1.5rem;
+    grid-template-areas: "lorem lorem lorem lorem"
+                         "imagen1 imagen2 imagen3 imagen4";
+    justify-items: center;
+    gap: 1rem;
+}
+
+
+
+.lorem{
+    grid-area: lorem;
+    text-align: center;
+    color: blanchedalmond;
+    font-size: 1.3rem;
+}
+
+.imagen1{
+    grid-area: imagen1;
+    display: flex;
+    justify-self: stretch;
+}
+
+.imagen2{
+    grid-area: imagen2;
+    display: flex;
+    justify-self: stretch
+}
+
+.imagen3{
+    grid-area: imagen3;
+    display: flex;
+    justify-self: stretch;
+}
+
+.imagen4{
+    grid-area: imagen4;
+    display: flex;
+    justify-self: stretch;
+}
+
+footer{
+    padding: 1rem;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.mainPanes{
+    display: grid;
+    height: 70vh;
+    padding: 1.5rem;
+    grid-template-columns: 20% auto auto;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "lorempan pan1 pan2"
+                         "lorempan pan3 pan4";
+    gap: 1rem;
+}
+
+.loremPanes{
+    grid-area: lorempan;
+    color: blanchedalmond;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.imgPan1{
+    grid-area: pan1;
+    display: flex;
+    justify-content: center;
+}
+
+.imgPan2{
+    grid-area: pan2;
+    display: flex;
+    justify-content: center;
+}
+
+.imgPan3{
+    grid-area: pan3;
+    display: flex;
+    justify-content: center;
+}
+
+.imgPan4{
+    grid-area: pan4;
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .mainHome{
+        height: 70vh;
+        display: grid;
+        padding: 1.5rem;
+        grid-template-areas: "lorem lorem "
+                             "imagen1 imagen2"
+                             "imagen3 imagen4";
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .mainPanes{
+        display: grid;
+        height: 70vh;
+        padding: 1.5rem;
+        grid-template-columns: 40% auto;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "lorempan pan1"
+                             "lorempan pan2"
+                             "lorempan pan3"
+                             "lorempan pan4";
+        gap: 1rem;
+    }
+    
+    
+}
+
+@media screen and (max-width:480px) {
+    .mainHome{
+        height: 70vh;
+        display: grid;
+        padding: 1.5rem;
+        grid-template-areas: "lorem"
+                             "imagen1"
+                             "imagen2"
+                             "imagen3"
+                             "imagen4";
+        justify-items: center;
+        gap: 1rem;
+    }
+
+    .mainPanes{
+        display: grid;
+        height: 70vh;
+        padding: 1.5rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "lorempan"
+                             "pan1"
+                             "pan2"
+                             "pan3"
+                             "pan4";
+        gap: 1rem;
+    }
+}
+
+
+
+
+
