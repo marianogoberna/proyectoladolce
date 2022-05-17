@@ -28,6 +28,11 @@ nav ul li{
     background-color: blanchedalmond;
     font-size: 1.5rem;
     border-radius: 1rem;
+    
+}
+
+nav ul li:hover{
+    transform: scale(1.5);
 }
 
 h1{
@@ -58,6 +63,20 @@ h1{
     grid-area: imagen1;
     display: flex;
     justify-self: stretch;
+    animation-name: panagirar;
+    animation-duration: 180s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes panagirar{
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .imagen2{
