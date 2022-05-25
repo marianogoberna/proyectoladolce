@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css">
 
     <title>Panes</title>
@@ -28,23 +31,36 @@
     <main class="mainPanes">
         <p class="loremPanes">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium perspiciatis vitae qui porro dolores, ad magnam consequatur! Totam vero quasi, nisi accusamus molestiae molestias, aliquid non possimus modi alias rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam totam, ab quasi iure sunt eveniet ipsam ratione illo impedit laborum non perspiciatis officiis, blanditiis animi, alias minima fuga quia ipsa!</p>
 
-        <div class="imgPan1">
-            <img src="../img/pan.jpeg" alt="pan">
-        </div>
-        <div class="imgPan2">
-            <img src="../img/pan.jpeg" alt="pan">
-        </div>
-        <div class="imgPan3">
-            <img src="../img/pan.jpeg" alt="pan">
-        </div>
-        <div class="imgPan4">
-            <img src="../img/pan.jpeg" alt="pan">
-        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/pan.jpeg" class="d-block w-100" alt="pan">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/pan.jpeg" class="d-block w-100" alt="pan">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/pan.jpeg" class="d-block w-100" alt="pan">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
 
     </main>
 
     <footer><a href="https://www.instagram.com/ladolceintegral/" target="_blank">Ir a nuestras redes</a></footer>
     
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
 </body>
 </html>
